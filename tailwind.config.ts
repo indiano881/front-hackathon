@@ -18,6 +18,7 @@ const config: Config = {
         "c-green":  "#C7EA46",
         "d-purple": "#4E2A84",
         "c-pink": "#DDA0DD",
+        "c-yellow": "#F9E076",
       },
       fontFamily: {
         roboto: ["var(--font-roboto)"],

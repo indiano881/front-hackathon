@@ -3,12 +3,12 @@
 
 
 interface PrizeCardProps {
-    text: string,
-    text1: string,
-    text2: string,
-    textColor: string,
-    textColor1: string,
-    index: number | any
+    text: string | null,
+    text1: string | null,
+    text2: string | null,
+    textColor: string | null,
+    textColor1: string | null,
+    index: number | any | null
 }
 
 const PrizeCard = ({text, text1, text2, textColor, textColor1, index}:PrizeCardProps) => {
