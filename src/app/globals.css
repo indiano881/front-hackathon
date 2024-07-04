@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .h1 {
+        @apply font-roboto font-bold text-[80px] leading-[80px];
+      }
+      .h2 {
+        @apply font-roboto font-semibold text-[24px] leading-[35px];
+      }
+      .button-text {
+        @apply font-roboto font-medium text-[16px];
+      }
+      .p1 {
+        @apply font-roboto font-medium text-[16px] leading-[32px];
+      }
+   
+      .links {
+        @apply font-roboto font-medium text-[16px] leading-[150%]
+      }
+   
+      .p2 {
+        @apply font-roboto font-normal text-[16px] leading-[150%];
+      }
+}
 
 html {
     min-height: 100vh;
