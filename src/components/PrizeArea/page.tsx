@@ -1,4 +1,7 @@
 import PrizeCard from '../PrizeCard/page';
+import Image from 'next/image';
+import cube from "../../../public/davide1.jpg"
+
 
 const prizesData = [
     {
@@ -38,6 +41,23 @@ const PrizeArea = () => {
                 textColor={item.textColor} 
                 textColor1={item.textColor1} 
                 index={index}/>)}
+            </div>
+
+            <div className='flex flex-row'>
+            <Image className='p-8 '
+      src={cube}
+      width={500}
+      height={500}
+      alt="Picture of the author"
+    />
+    <div className='flex flex-col'>
+        <p className='h2 text-c-pink'>Registration for free</p> 
+        <p className='h2 text-white'>Appplication closes</p>
+        <p className='h1 text-white'>February 20th</p> 
+
+    </div>
+
+
             </div>
         </div>
     )
