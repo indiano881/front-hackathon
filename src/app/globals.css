@@ -13,7 +13,7 @@
         @apply font-roboto font-medium text-[16px];
       }
       .p1 {
-        @apply font-roboto font-medium text-[16px] leading-[32px];
+        @apply font-roboto font-semibold text-[16px] leading-[32px];
       }
    
       .links {
