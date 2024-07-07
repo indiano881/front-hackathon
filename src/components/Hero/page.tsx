@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Davide from "../../../public/davide.jpg"
+import Davide from "../../../public/davide1.jpg"
 import HeroFooter from "../HeroFooter/page";
 const Hero = () => {
     return (

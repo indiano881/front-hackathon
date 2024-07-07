@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         "c-purple": "#6A0DAD",
         "c-green":  "#C7EA46",
-        "d-purple": "#4E2A84",
+        "d-purple": "#32174D",
         "c-pink": "#DDA0DD",
         "c-yellow": "#F9E076",
       },
