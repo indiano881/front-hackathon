@@ -4,8 +4,20 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nex
 import Davide from "../../../public/davide.jpg";
 
 export default function NavbarC() {
+
+    const menuItems = [
+        "Home",
+        "Registartion",
+        "Stories",
+        "log in",
+        "System",
+        "Enroll here",
+        
+      ];
   return (
-    <Navbar className="bg-c-green">
+    
+    <Navbar  className="bg-c-green md:sticky top-0 shadow-md flex justify-evenly ">
+        {/*should hide on scroll only for mobile */}
       <NavbarBrand>
         <Image className="rounded-full"
         src={Davide} 
@@ -27,18 +39,18 @@ export default function NavbarC() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/stories">
             Stories
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+          <Link href="/registration">Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+          <Button as={Link} color="primary" href="/registration" variant="flat" className=" bg-c-pink px-4 py rounded-lg border-d-purple border-2">
+            Enroll here
           </Button>
         </NavbarItem>
       </NavbarContent>

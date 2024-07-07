@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-d-purple">
-      <body className={roboto.className} >
+      <body className={`${roboto.className} relative`}>
         <NavbarC />
         
         {children}</body>
