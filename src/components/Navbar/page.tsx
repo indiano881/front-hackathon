@@ -5,15 +5,7 @@ import Davide from "../../../public/davide.jpg";
 
 export default function NavbarC() {
 
-    const menuItems = [
-        "Home",
-        "Registartion",
-        "Stories",
-        "log in",
-        "System",
-        "Enroll here",
-        
-      ];
+    
   return (
     
     <Navbar  className="bg-c-green md:sticky top-0 shadow-md flex justify-evenly ">
