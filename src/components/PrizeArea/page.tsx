@@ -1,6 +1,7 @@
 import PrizeCard from '../PrizeCard/page';
 import Image from 'next/image';
-import cube from "../../../public/davide1.jpg"
+import nerd from "../../../public/nerd.png"
+import BigTitle from '../BigTitle/page';
 
 
 const prizesData = [
@@ -32,7 +33,7 @@ const prizesData = [
 const PrizeArea = () => {
     return (
         <div className='h-full'>
-            
+            <BigTitle text1={'Amazing'} text2={'Prizes'} />
             <div className='flex flex-row'>
                 {prizesData.map((item, index)=> <PrizeCard 
                 text={item.text} 
@@ -45,7 +46,7 @@ const PrizeArea = () => {
 
             <div className='flex flex-row'>
             <Image className='p-8 '
-      src={cube}
+      src={nerd}
       width={500}
       height={500}
       alt="Picture of the author"
