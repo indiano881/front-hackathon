@@ -8,7 +8,7 @@ export default function NavbarC() {
     
   return (
     
-    <Navbar  className="bg-c-green md:sticky top-0 shadow-md flex justify-evenly ">
+    <Navbar  className="bg-c-green md:sticky top-0 shadow-md   z-30">
         {/*should hide on scroll only for mobile */}
       <NavbarBrand>
         <Image className="rounded-full"
@@ -28,6 +28,11 @@ export default function NavbarC() {
         <NavbarItem isActive>
           <Link href="/registration" aria-current="page">
             Registration
+          </Link>
+        </NavbarItem>
+        <NavbarItem isActive>
+          <Link href="/about" aria-current="page">
+            About us
           </Link>
         </NavbarItem>
         <NavbarItem>

@@ -4,6 +4,7 @@ import PrizeArea from "@/components/PrizeArea/page";
 import ScheduleArea from "@/components/ScheduleArea/page";
 import SpeakersArea from "@/components/SpeakersArea/page";
 import EventsArea from "@/components/EventsArea/page";
+import JuryArea from "@/components/JuryArea/page";
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
       <PrizeArea />
       <ScheduleArea />
       <SpeakersArea />
+      <JuryArea />
       <EventsArea />
+      
     </main>
   );
 }
