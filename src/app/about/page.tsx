@@ -1,10 +1,11 @@
+import JuryArea from "@/components/JuryArea/page";
 
 
 const about = () => {
     return (
         <div>
           <p>about us</p>
-          <p>Jury</p>
+          <JuryArea />
           <p>Speakers</p>
           <p>Staff</p>
         </div>

@@ -2,6 +2,7 @@ import PrizeCard from '../PrizeCard/page';
 import Image from 'next/image';
 import nerd from "../../../public/nerd.png"
 import BigTitle from '../BigTitle/page';
+import FormatCard from '../FormatCard';
 
 
 const prizesData = [
@@ -60,6 +61,12 @@ const PrizeArea = () => {
 
 
             </div>
+            <div className="flex flex-col md:flex-row m-8 justify-between items-center">
+            <FormatCard  heading={"3+"} text={"FORMAT"} transition={0.2} />
+            <FormatCard  heading={"5+"} text={"WORKSHOPS"} transition={0.4} />
+            <FormatCard  heading={"10K"} text={"PRIZES"} transition={0.6} />
+            <FormatCard  heading={"100%"} text={"FUN"} transition={0.6} />
+          </div>
         </div>
     )
 };

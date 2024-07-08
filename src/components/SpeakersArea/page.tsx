@@ -1,4 +1,5 @@
 import BigTitle from "../BigTitle/page";
+
 import SpeakerCard from "../SpeakerCard/page";
 
 
@@ -13,6 +14,7 @@ const SpeakersArea = () => {
           <SpeakerCard />
           <SpeakerCard />
           </div>
+          
         </div>
     )
 };
