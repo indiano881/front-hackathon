@@ -23,7 +23,7 @@ const ScheduleArea = () => {
         <div className="h-full">
           <BigTitle text1={"3 DAYS"} text2={"HACKATHON"} />
           <UnderTitleText text={"Connect with designers worldwide, celebrating world-class content and forging connections across industries, verticlas and geographical boundaries."} />
-          <div className="flex flex-row justify-center">
+          <div className="flex flex-col md:flex-row items-left md:justify-center">
               {scheduleItems.map((item, index)=> <ScheduleCard day={item.day} text={item.text} />)}
           </div>
         </div>

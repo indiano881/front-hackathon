@@ -9,7 +9,7 @@ const EventsArea = () => {
         <div className="h-full">
             <BigTitle text1={"FUTURE"} text2={"EVENTS"} />
             <UnderTitleText text={"Check out the upcoming and similar events! Coding is fun! Running an Hackathon is amazing!"} />
-            <div className="flex flex-row justify-evenly m-6">
+            <div className="flex flex-col md:flex-row justify-evenly m-6">
                 <EventsCard  />
                 <EventsCard  />
                 <EventsCard  />

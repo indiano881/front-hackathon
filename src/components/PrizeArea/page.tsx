@@ -45,14 +45,14 @@ const PrizeArea = () => {
                 index={index}/>)}
             </div>
 
-            <div className='flex flex-col md:flex-row'>
-            <Image className='p-8 '
+            <div className='flex flex-col md:flex-row md:justify-center'>
+            <Image className='p-8 md:mx-6'
       src={nerd}
       width={500}
       height={500}
       alt="Picture of the author"
     />
-    <div className='flex flex-col m-6'>
+    <div className='flex flex-col m-6 md:mx-8 p-8'>
         <p className='h2 text-c-pink'>Registration for free</p> 
         <p className='h2 text-white'>Appplication closes</p>
         <p className='h1 text-white'>February 20th</p> 
