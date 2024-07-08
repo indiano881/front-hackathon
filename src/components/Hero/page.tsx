@@ -4,7 +4,7 @@ import HeroFooter from "../HeroFooter/page";
 const Hero = () => {
     return (
         <>
-        <div className="flex h-full flex-row m-6">
+        <div className="flex h-full  flex-col md:flex-row m-6">
             <div className="flex flex-col ">
                 <p className="text-c-pink h1">26, 27 & 28 FEB 2026</p>
                 <h2 className="text-c-green h1">Frontend</h2>

@@ -7,7 +7,7 @@ const SpeakersArea = () => {
     return (
         <div className="h-full">
           <BigTitle text1={"OUR"} text2={"SPEAKERS"} />
-          <div className="flex flex-row ">
+          <div className="flex flex-col md:flex-row ">
           <SpeakerCard />
           <SpeakerCard />
           <SpeakerCard />
