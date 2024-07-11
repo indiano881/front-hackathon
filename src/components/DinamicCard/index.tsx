@@ -13,7 +13,7 @@ const cardVariants: Variants = {
   },
   onscreen: {
     y: 50,
-    rotate: -5,
+    rotate: 0,
     transition: {
       type: "spring",
       bounce: 0.4,
@@ -40,7 +40,7 @@ const StaffCard= ({staffImg,hueA,hueB,text1, text2}:StaffCardProps) => {
       viewport={{ once: true, amount: 0.7 }}
     >
       <div className="splash" style={{ background }} />
-      <motion.div className="flex flex-col basis-1/2 items-center pb-16 z-20 w-72 h-[430px] justify-center bg-white rounded-[20px] shadow-[0_0_1px_hsl(0deg_0%_0%/_0.075),0_0_2px_hsl(0deg_0%_0%/_0.075),0_0_4px_hsl(0deg_0%_0%/_0.075),0_0_8px_hsl(0deg_0%_0%/_0.075),0_0_16px_hsl(0deg_0%_0%/_0.075)] origin-[10%_60%] sm:w-[500px] sm:h-[430px] sm:p-6" variants={cardVariants}>
+      <motion.div className="flex flex-col basis-1/2 items-center pb-16 z-20 w-72 h-[350px] justify-center bg-white rounded-[20px] shadow-[0_0_1px_hsl(0deg_0%_0%/_0.075),0_0_2px_hsl(0deg_0%_0%/_0.075),0_0_4px_hsl(0deg_0%_0%/_0.075),0_0_8px_hsl(0deg_0%_0%/_0.075),0_0_16px_hsl(0deg_0%_0%/_0.075)] origin-[10%_60%] sm:w-[500px] sm:h-[430px] sm:p-6" variants={cardVariants}>
       <Image
           className="rounded-lg mx-2"
           src={staffImg}

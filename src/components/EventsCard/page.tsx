@@ -10,7 +10,7 @@ interface EventsCardProps {
 
 const EventsCard = () => {
     return (
-        <Card className="py-4 bg-white m-4 rounded-lg">
+        <Card className="py-4 bg-white m-4 rounded-lg max-w-[330px]">
           
           <CardBody className="overflow-visible p-2">
             <Image
@@ -26,7 +26,7 @@ const EventsCard = () => {
             <h4 className="font-bold text-large pb-4">Challenge the best music artist in this faboulous event!</h4>
           </CardHeader>
           <Button radius="full"
-            className="bg-d-purple text-white shadow-lg cursor-pointer hover:bg-c-pink hover:text-black mx-8 py-2"
+            className="hover:bg-d-purple hover:text-white shadow-lg cursor-pointer bg-c-pink text-black mx-8 py-2"
             >
                 <Link href="/registration">
                 Register here

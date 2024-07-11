@@ -46,16 +46,16 @@ const PrizeArea = () => {
             </div>
 
             <div className='flex flex-col md:flex-row md:justify-center'>
-            <Image className='p-8 md:mx-6'
+            <Image className='sm:p-8 md:mx-6'
       src={nerd}
-      width={500}
-      height={500}
+      width={300}
+      height={300}
       alt="Picture of the author"
     />
     <div className='flex flex-col m-6 md:mx-8 p-8'>
         <p className='h2 text-c-pink'>Registration for free</p> 
         <p className='h2 text-white'>Appplication closes</p>
-        <p className='h1 text-white'>February 20th</p> 
+        <p className='m1 sm:h1 text-white'>February 20th</p> 
 
     </div>
 
