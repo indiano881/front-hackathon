@@ -1,32 +1,38 @@
 import React from "react";
-import {Card, CardHeader, CardBody, Image, Button} from "@nextui-org/react";
-import { StaticImageData } from "next/image";
+import {Card, CardHeader, CardBody, Button} from "@nextui-org/react";
+import Image  from "next/image";
+
 import Link from "next/link";
+import { StaticImageData } from "next/image";
 
 
 interface EventsCardProps {
-    image:  any
+    image:   StaticImageData | string,
+    title: string,
+    subtitle: string,
+    description: string,
+    id: number
 }
 
-const EventsCard = () => {
+const EventsCard = ({image, title, subtitle, description, id}:EventsCardProps) => {
     return (
-        <Card className="py-4 bg-white m-4 rounded-lg">
+        <Card className="py-4 bg-white m-4 rounded-lg max-w-[330px]">
           
           <CardBody className="overflow-visible p-2">
             <Image
-              alt="Card background"
+              alt={title}
               className="object-cover rounded-xl"
-              src="https://nextui.org/images/hero-card-complete.jpeg"
+              src={image}
               width={270}
             />
           </CardBody>
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-            <p className="text-tiny uppercase font-bold">Musicackathon</p>
-            <small className="text-default-500">Stockholm 2026</small>
-            <h4 className="font-bold text-large pb-4">Challenge the best music artist in this faboulous event!</h4>
+            <p className="text-tiny uppercase font-bold">{title}</p>
+            <small className="text-default-500">{subtitle}</small>
+            <h4 className="font-bold text-large pb-4">{description}</h4>
           </CardHeader>
           <Button radius="full"
-            className="bg-d-purple text-white shadow-lg cursor-pointer hover:bg-c-pink hover:text-black mx-8 py-2"
+            className="hover:bg-d-purple hover:text-white shadow-lg cursor-pointer bg-c-pink text-black mx-8 py-2"
             >
                 <Link href="/registration">
                 Register here
