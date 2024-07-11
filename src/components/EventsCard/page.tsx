@@ -5,7 +5,10 @@ import Link from "next/link";
 
 
 interface EventsCardProps {
-    image:  any
+    image:  {src: string, alt: string},
+    title: string,
+    subtitle: string,
+    description: string
 }
 
 const EventsCard = () => {
