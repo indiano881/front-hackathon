@@ -1,9 +1,10 @@
-import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, AwaitedReactNode } from "react"
+"use client"
 import client from "../../../apolloClient"
 import {gql} from "@apollo/client"
+import React from "react";
 
 let dataCleaned:any
-export async function getData() {
+async function getData() {
   
   const {data} = await client.query({
     query: gql`{davides{
@@ -21,15 +22,19 @@ export async function getData() {
 }
 getData()
 const stories = () => {
+
+
+  
+  console.log(dataCleaned)
     return (
         <div>
           <p>stories</p>
-          {dataCleaned.map((item: any, index: any)=> <div>
+          {dataCleaned.map((item: any, index: any)=> <>
             <p> {item.title}</p>
             <p> {item.textLong}</p>
-            <img src={item.image} alt={item.title} className="min-h-[150px] min-w-[150px]"/>
             
-            </div>)}
+            
+            </>)}
             
         </div>
     )
