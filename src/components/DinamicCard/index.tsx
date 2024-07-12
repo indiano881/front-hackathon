@@ -23,7 +23,7 @@ const cardVariants: Variants = {
 };
 
 interface StaffCardProps {
-    staffImg: StaticImageData;
+    staffImg: any;
     hueA: number;
     hueB: number;
     text1: string;
