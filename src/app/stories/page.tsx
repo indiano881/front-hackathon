@@ -35,14 +35,15 @@ const Stories = () => {
   console.log(dataCleaned)
   const baseURL= "https://eu-central-1-shared-euc1-02.graphassets.com/clyh94fzz040h06w509j46b34/"
   return (
-    <div>
+    <div className="flex flex-col md:flex-row">
       <p>stories</p>
       {dataCleaned.map((item: any, index: number) => (
-        <React.Fragment key={index}>
+        <div key={index} className="bg-white rounded-lg m-6 w-[300px] flex flex-col items-center">
+          <Image src={item.image[0].url} alt={item.title} height={200} width={200} className="m-2"/>
           <p>{item.title}</p>
           <p>{item.textLong}</p>
-          <Image src={item.image[0].url} alt={item.title} height={500} width={500}/>
-        </React.Fragment>
+          
+        </div>
       ))}
     </div>
   );
