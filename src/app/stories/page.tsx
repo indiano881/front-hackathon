@@ -27,8 +27,10 @@ const stories = () => {
           {dataCleaned.map((item: any, index: any)=> <div>
             <p> {item.title}</p>
             <p> {item.textLong}</p>
-            <img src={item.image} alt={item.title} className=""/>
+            <img src={item.image} alt={item.title} className="min-h-[150px] min-w-[150px]"/>
+            
             </div>)}
+            
         </div>
     )
 };
