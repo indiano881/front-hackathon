@@ -59,22 +59,22 @@ export default function NavbarC() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/">
+          <Link color="foreground" href="/" className="text-white">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/registration" aria-current="page">
+          <Link href="/registration" aria-current="page" className="text-white">
             Registration
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/about" aria-current="page">
+          <Link href="/about" aria-current="page" className="text-white">
             About us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/stories">
+          <Link color="foreground" href="/stories" className="text-white">
             Stories
           </Link>
         </NavbarItem>
