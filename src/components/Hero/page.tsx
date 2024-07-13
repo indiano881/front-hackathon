@@ -36,7 +36,7 @@ const Hero = () => {
           height={500}
           alt="Picture of the author"/>
             </div>
-            <Image className="sm:m-6 w-[75px] h-[75px] md:w-[100px] md:h-[100px] z-50 absolute hidden lg:inline-block lg:right-[550px]" style={{transform: `translateX(${offsetY * 0.7}px)` }}
+            <Image className="sm:m-6 w-[75px] h-[75px] md:w-[100px] md:h-[100px] z-50 absolute hidden lg:inline-block lg:right-[550px]" style={{transform: `translateY(${offsetY * -0.4}px)` }}
           src={Star} 
           width={50}
           height={50}

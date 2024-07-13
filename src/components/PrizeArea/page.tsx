@@ -6,7 +6,7 @@ import nerd from "../../../public/nerd.png"
 import BigTitle from '../BigTitle/page';
 import FormatCard from '../FormatCard';
 import { useEffect, useState } from 'react';
-import Dollar from "../../../public/parallax/dollar.png"
+import Gold from "../../../public/parallax/diamond.png"
 
 const prizesData = [
     {
@@ -63,8 +63,8 @@ const PrizeArea = () => {
       height={450}
       alt="Picture of the author"
     />
-    <Image className="sm:m-6 w-[75px] h-[75px] md:w-[100px] md:h-[100px] z-50 absolute hidden lg:inline-block lg:right-[550px]" style={{transform: `translateX(${offsetY * -0.7}px)` }}
-          src={Dollar} 
+    <Image className="sm:m-6 w-[75px] h-[75px] md:w-[100px] md:h-[100px] z-50 absolute hidden lg:inline-block lg:left-[450px]" style={{transform: `translateY(${offsetY * -0.4}px)` }}
+          src={Gold} 
           width={250}
           height={250}
           alt="Picture of the author"/>
