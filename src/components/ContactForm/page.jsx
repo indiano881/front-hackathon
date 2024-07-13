@@ -43,8 +43,6 @@ const ContacthtmlForm = () => {
       <div className="flex justify-end">
         <ReCAPTCHA sitekey="6LfIRg8qAAAAAHPIx4cCpBl9f-DsdK_4sjZvy43t"
         onChange={val=> setCapVal(val)}
-        
-        
         />
         <input disabled={!capVal} type="submit" value="Send" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg cursor-pointer" />
       </div>
