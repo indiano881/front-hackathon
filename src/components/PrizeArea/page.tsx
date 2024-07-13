@@ -1,9 +1,12 @@
+"use client"
+
 import PrizeCard from '../PrizeCard/page';
 import Image from 'next/image';
 import nerd from "../../../public/nerd.png"
 import BigTitle from '../BigTitle/page';
 import FormatCard from '../FormatCard';
-
+import { useEffect, useState } from 'react';
+import Gold from "../../../public/parallax/diamond.png"
 
 const prizesData = [
     {
@@ -32,6 +35,14 @@ const prizesData = [
 
 
 const PrizeArea = () => {
+    const [offsetY, setOffsetY] = useState(0);
+    const handleScroll = () => setOffsetY(window.scrollY)
+
+
+    useEffect(()=>{
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
     return (
         <div className='h-full'>
             <BigTitle text1={'Amazing'} text2={'Prizes'} />
@@ -46,12 +57,17 @@ const PrizeArea = () => {
             </div>
 
             <div className='flex flex-col md:flex-row md:justify-center'>
-            <Image className='sm:p-8 md:mx-6'
+            <Image className='sm:p-8 md:mx-6 w-[300px] md:w-[450px]'
       src={nerd}
-      width={300}
-      height={300}
+      width={450}
+      height={450}
       alt="Picture of the author"
     />
+    <Image className="sm:m-6 w-[75px] h-[75px] md:w-[100px] md:h-[100px] z-50 absolute hidden lg:inline-block lg:left-[450px]" style={{transform: `translateY(${offsetY * -0.4}px)` }}
+          src={Gold} 
+          width={250}
+          height={250}
+          alt="Picture of the author"/>
     <div className='flex flex-col m-6 md:mx-8 p-8'>
         <p className='h2 text-c-pink'>Registration for free</p> 
         <p className='h2 text-white'>Appplication closes</p>
