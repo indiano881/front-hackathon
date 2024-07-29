@@ -1,13 +1,13 @@
+import BigTitle from "@/components/BigTitle/page";
 import JuryArea from "@/components/JuryArea/page";
 
 
 const about = () => {
     return (
         <div>
-          <p>about us</p>
-          <JuryArea />
-          <p>Speakers</p>
-          <p>Staff</p>
+          <BigTitle text1={"About"} text2={"us"} />
+          
+          
         </div>
     )
 };
