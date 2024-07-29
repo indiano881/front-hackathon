@@ -81,7 +81,7 @@ export default function NavbarC() {
       </NavbarContent>
       <NavbarContent justify="end">{/*<NavbarItem><Link href="/registration">Login</Link></NavbarItem>*/}
         <NavbarItem>
-          <Button as={Link} color="primary" href="/registration" variant="flat" className=" bg-c-pink px-4 py rounded-lg hidden md:inline border-d-purple border-2">
+          <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-white hover:text-d-purple shadow-lg cursor-pointer bg-c-pink text-black mx-8 py-2">
             Enroll here
           </Button>
         </NavbarItem>
