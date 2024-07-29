@@ -1,9 +1,9 @@
 import BigTitle from "../BigTitle/page";
 import EventsCard from "../EventsCard/page";
 import UnderTitleText from "../UnderTitleText/page";
-import Event1 from "../../../public/event1.jpeg"
+import Event3 from "../../../public/event1.jpeg"
 import Event2 from "../../../public/ai.jpg"
-import Event3 from "../../../public/cube.png"
+import Event1 from "../../../public/events/event1.jpg"
 
 
 const eventsArray:Array<any> = [
