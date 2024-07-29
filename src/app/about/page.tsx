@@ -1,13 +1,14 @@
-import JuryArea from "@/components/JuryArea/page";
+
+import HeroAbout from "@/components/HeroAbout/page";
+
 
 
 const about = () => {
     return (
         <div>
-          <p>about us</p>
-          <JuryArea />
-          <p>Speakers</p>
-          <p>Staff</p>
+          <HeroAbout />
+          
+          
         </div>
     )
 };

@@ -59,29 +59,29 @@ export default function NavbarC() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/" className="text-white">
+          <Link color="foreground" href="/" className="text-white hover:underline">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/registration" aria-current="page" className="text-white">
+          <Link href="/registration" aria-current="page" className="text-white hover:underline">
             Registration
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/about" aria-current="page" className="text-white">
+          <Link href="/about" aria-current="page" className="text-white hover:underline" >
             About us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/stories" className="text-white">
+          <Link color="foreground" href="/stories" className="text-white hover:underline">
             Stories
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">{/*<NavbarItem><Link href="/registration">Login</Link></NavbarItem>*/}
         <NavbarItem>
-          <Button as={Link} color="primary" href="/registration" variant="flat" className=" bg-c-pink px-4 py rounded-lg hidden md:inline border-d-purple border-2">
+          <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-white hover:text-d-purple shadow-lg cursor-pointer bg-c-pink text-black mx-8 py-2">
             Enroll here
           </Button>
         </NavbarItem>
@@ -94,7 +94,7 @@ export default function NavbarC() {
     >
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6"
+        className="h-6 w-6 z-20 absolute right-2 bottom-6"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -116,16 +116,12 @@ export default function NavbarC() {
     initial="closed"
     animate="open"
     variants={wrapperVariants}
-    className="bg-c-pink w-full md:hidden flex flex-col p-6 space-y-6 absolute top-[70px] "
+    className="bg-c-pink w-full md:hidden flex flex-col p-6 space-y-6 absolute top-[70px] z-10"
   >
-    <Link href={"/"} className="button-text" >menuvoice</Link>
-    <Link href={"/"} className="block mb-2 button-text">menuvoice</Link>
-    <Link href={`/news`} className="block mb-2 button-text">menuvoice</Link>
-    <Link href={`/faq_page`} className="block mb-2 button-text">menuvoice</Link>
-    <div className="flex items-center">
-      
-      <span className="ml-2">menuvoice</span>
-    </div>
+    <Link href={"/"} className="button-text" >Home</Link>
+    <Link href={"/registration"} className="block mb-2 button-text">Registartion</Link>
+    <Link href={`/about`} className="block mb-2 button-text">About us</Link>
+    <Link href={`/stories`} className="block mb-2 button-text">Stories</Link>
     
   </motion.div>
  
