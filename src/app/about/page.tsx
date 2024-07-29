@@ -1,11 +1,12 @@
-import BigTitle from "@/components/BigTitle/page";
-import JuryArea from "@/components/JuryArea/page";
+
+import HeroAbout from "@/components/HeroAbout/page";
+
 
 
 const about = () => {
     return (
         <div>
-          <BigTitle text1={"About"} text2={"us"} />
+          <HeroAbout />
           
           
         </div>
