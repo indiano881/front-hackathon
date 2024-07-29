@@ -116,16 +116,12 @@ export default function NavbarC() {
     initial="closed"
     animate="open"
     variants={wrapperVariants}
-    className="bg-c-pink w-full md:hidden flex flex-col p-6 space-y-6 absolute top-[70px] "
+    className="bg-c-pink w-full md:hidden flex flex-col p-6 space-y-6 absolute top-[70px] z-10"
   >
-    <Link href={"/"} className="button-text" >menuvoice</Link>
-    <Link href={"/"} className="block mb-2 button-text">menuvoice</Link>
-    <Link href={`/news`} className="block mb-2 button-text">menuvoice</Link>
-    <Link href={`/faq_page`} className="block mb-2 button-text">menuvoice</Link>
-    <div className="flex items-center">
-      
-      <span className="ml-2">menuvoice</span>
-    </div>
+    <Link href={"/"} className="button-text" >Home</Link>
+    <Link href={"/registration"} className="block mb-2 button-text">Registartion</Link>
+    <Link href={`/about`} className="block mb-2 button-text">About us</Link>
+    <Link href={`/stories`} className="block mb-2 button-text">Stories</Link>
     
   </motion.div>
  

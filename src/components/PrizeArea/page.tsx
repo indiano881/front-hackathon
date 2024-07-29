@@ -57,7 +57,7 @@ const PrizeArea = () => {
             </div>
 
             <div className='flex flex-col md:flex-row md:justify-center'>
-            <Image className='sm:p-8 md:mx-6 w-[300px] md:w-[450px]'
+            <Image className='sm:p-8 mx-6 w-[300px] md:w-[450px]'
       src={nerd}
       width={450}
       height={450}
