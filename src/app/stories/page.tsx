@@ -4,6 +4,7 @@ import { gql } from "@apollo/client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import BigTitle from "@/components/BigTitle/page";
+import Background from "@/components/Background/page";
 
 async function getData() {
   const { data } = await client.query({
@@ -38,6 +39,7 @@ const Stories = () => {
   return (
   <>
   <BigTitle text1={"Our"} text2={"Stories"} />
+  
   <div className="flex flex-col md:flex-row">
       
       {dataCleaned.map((item: any, index: number) => (

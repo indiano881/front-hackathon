@@ -81,7 +81,7 @@ export default function NavbarC() {
       </NavbarContent>
       <NavbarContent justify="end">{/*<NavbarItem><Link href="/registration">Login</Link></NavbarItem>*/}
         <NavbarItem>
-          <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-white hover:text-d-purple shadow-lg cursor-pointer bg-c-pink text-black mx-8 py-2">
+          <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-white hover:text-d-purple shadow-lg cursor-pointer bg-c-pink text-black mx-8 py-2 hidden md:inline-block">
             Enroll here
           </Button>
         </NavbarItem>
@@ -93,21 +93,22 @@ export default function NavbarC() {
       onClick={toggleMenu}
     >
       <motion.svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6 z-20 absolute right-2 bottom-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        animate={isOpen ? "open" : "closed"}
-        variants={{ open: { rotate: 180 }, closed: { rotate: 0 } }}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
-        />
-      </motion.svg>
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8 z-20 absolute right-2 bottom-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor" // This sets the color to whatever is defined in CSS or inline styles
+            animate={isOpen ? "open" : "closed"}
+            variants={{ open: { rotate: 180 }, closed: { rotate: 0 } }}
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
+                style={{ stroke: 'white' }} // This explicitly sets the stroke color to white
+            />
+        </motion.svg>
     </button>
   </div>
 
