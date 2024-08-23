@@ -49,12 +49,14 @@ export default function NavbarC() {
     <Navbar  className="md:bg-d-purple md:sticky top-0 md:shadow-lg md:py-4 z-30">
         {/*should hide on scroll only for mobile */}
       <NavbarBrand>
-        <Image className="rounded-full"
+        <a href="/"> <Image className="rounded-full m-2"
         src={Davide} 
         width={60}
       height={60}
       alt="Picture of the author"
-        />
+      
+        /></a>
+       
         
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
