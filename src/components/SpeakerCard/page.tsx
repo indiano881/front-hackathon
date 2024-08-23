@@ -27,9 +27,9 @@ const SpeakerCard = ({name, title, description, image}:SpeakerCardProps) => {
             />
           </CardBody>
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-            <p className="text-tiny uppercase font-bold">{name}</p>
+            <p className="text-bold uppercase font-bold">{name}</p>
             <small className="text-default-500"> {title}</small>
-            <h4 className="font-bold text-large pb-4">{description}</h4>
+            <h4 className=" text-large pb-4">{description}</h4>
           </CardHeader>
           
         </Card>

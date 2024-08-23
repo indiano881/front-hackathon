@@ -5,6 +5,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import BigTitle from "@/components/BigTitle/page";
 import Background from "@/components/Background/page";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 async function getData() {
   const { data } = await client.query({
@@ -28,7 +30,7 @@ async function getData() {
 
 const Stories = () => {
   const [dataCleaned, setDataCleaned] = useState<any[]>([]);
-
+  const pathname = usePathname();
   useEffect(() => {
     getData().then((data) => {
       setDataCleaned(data);
@@ -48,7 +50,12 @@ const Stories = () => {
           <p className="font-bold">{item.title}</p>
           <p>{item.textLong.split(' ').slice(0, 50).join(' ') + '...'}</p>
 
-          
+          <Link
+                              href={`/stories/${item.slug}`}
+                              className="hover:text-grey1 underline font-bold"
+                                  >
+                                Read more
+                      </Link>
         </div>
       ))}
     </div>
