@@ -42,9 +42,10 @@ const Stories = () => {
       
       {dataCleaned.map((item: any, index: number) => (
         <div key={index} className="bg-white rounded-lg m-6 w-[300px] flex flex-col items-center">
-          <Image src={item.image[0].url} alt={item.title} height={200} width={200} className="m-2"/>
-          <p>{item.title}</p>
-          <p>{item.textLong}</p>
+          <Image src={item.image[0].url} alt={item.title} height={200} width={300} className="m-2"/>
+          <p className="font-bold">{item.title}</p>
+          <p>{item.textLong.split(' ').slice(0, 50).join(' ') + '...'}</p>
+
           
         </div>
       ))}
