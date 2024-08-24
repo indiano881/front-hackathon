@@ -48,8 +48,8 @@ const StaffCard= ({staffImg,hueA,hueB,text1, text2}:StaffCardProps) => {
           height={300}
           alt="Picture of the author"
         />
-        <p className="h4 text-black font-bold text-center py-2">{text1}</p>
-        <p className="h4 text-black font-bold pr-2 pl-2 text-center">{text2}</p>
+        <p className="text-2xl text-black font-bold text-center py-2">{text1}</p>
+        <p className="h4 text-black font-semibold italic pr-2 pl-2 text-center">{text2}</p>
       </motion.div>
     </motion.div>
   );

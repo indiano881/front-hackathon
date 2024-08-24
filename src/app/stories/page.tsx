@@ -41,7 +41,13 @@ const Stories = () => {
   return (
   <>
   <BigTitle text1={"Our"} text2={"Stories"} />
-  
+  <div className="flex flex-col w-[300px] md:w-[450px] m-6">
+    <h1 className="text-white h2">Lates news</h1>
+    <h2 className="text-c-pink h2 w-[300px] md:w-[740px] lg:w-[1000px] xl:w-[1240px] 2xl:w-[1530px] text-justify">
+        Our stories reflect the diverse experiences and journeys of individuals who have shaped our community. Through personal narratives, we celebrate the challenges, triumphs, and milestones that have defined our collective path. These stories are a testament to the resilience, creativity, and passion that drive us forward. They offer a glimpse into the lives of those who have dared to dream, innovate, and make a difference. 
+    </h2>
+</div>
+
   <div className="flex flex-col md:flex-row md:justify-evenly">
       
       {dataCleaned.map((item: any, index: number) => (

@@ -17,18 +17,18 @@ const SpeakerCard = ({name, title, description, image}:SpeakerCardProps) => {
     return (
         <Card className="py-4 bg-c-pink m-4 rounded-lg">
           
-          <CardBody className="overflow-visible p-2">
+          <CardBody className="overflow-visible p-2 items-center">
             <Image
               alt="Card background"
-              className="object-cover rounded-xl"
+              className="object-cover rounded-xl items-center"
               src={image}
               width={270}
               height={270}
             />
           </CardBody>
-          <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-            <p className="text-bold uppercase font-bold">{name}</p>
-            <small className="text-default-500"> {title}</small>
+          <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
+            <p className="text-bold  font-bold text-2xl">{name}</p>
+            <p className="font-semibold italic"> {title}</p>
             <h4 className=" text-large pb-4">{description}</h4>
           </CardHeader>
           

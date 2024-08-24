@@ -18,7 +18,7 @@ const EventsCard = ({image, title, subtitle, description, id}:EventsCardProps) =
     return (
         <Card className="py-4 bg-white m-4 rounded-lg max-w-[330px]">
           
-          <CardBody className="overflow-visible p-2">
+          <CardBody className="overflow-visible p-2 items-center">
             <Image
               alt={title}
               className="object-cover rounded-xl"

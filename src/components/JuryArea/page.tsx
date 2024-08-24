@@ -12,13 +12,13 @@ const judgeArray = [
       name: "John Doe",
       title: "Cloud Solutions Architect",
       description: "John Doe is a Cloud Solutions Architect who specializes in designing scalable cloud infrastructures. With a decade of experience in the industry, John has led multiple successful cloud migration projects.",
-      image: "/judges/judge2.png"
+      image: "/judges/judge3.jpg"
   },
   {
       name: "Dr. Emily Zhang",
       title: "Backend Developer",
       description: "Dr. Emily Zhang is a renowned backend developer known for her expertise in building robust backend systems. She has been a guest lecturer at several prestigious universities and is passionate about teaching and mentoring.",
-      image: "/judges/judge3.jpg"
+      image: "/judges/judge2.png"
   }
 ];
 const JuryArea = () => {

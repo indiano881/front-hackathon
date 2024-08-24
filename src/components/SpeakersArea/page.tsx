@@ -2,37 +2,38 @@ import BigTitle from "../BigTitle/page";
 
 import SpeakerCard from "../SpeakerCard/page";
 const speakersArray = [
-  {
-      name: "Dr. Jane Smith",
-      title: "AI Researcher",
-      description: "Dr. Jane Smith is an AI researcher with over 15 years of experience in deep learning and neural networks. She has published numerous papers and is a keynote speaker at various AI conferences worldwide.",
-      image: "/speakers/speaker1.jpg"
-  },
-  {
-      name: "John Doe",
-      title: "Cloud Solutions Architect",
-      description: "John Doe is a Cloud Solutions Architect who specializes in designing scalable cloud infrastructures. With a decade of experience in the industry, John has led multiple successful cloud migration projects.",
-      image: "/speakers/speaker2.jpg"
-  },
-  {
-      name: "Dr. Emily Zhang",
-      title: "Backend Developer",
-      description: "Dr. Emily Zhang is a renowned backend developer known for her expertise in building robust backend systems. She has been a guest lecturer at several prestigious universities and is passionate about teaching and mentoring.",
-      image: "/speakers/speaker3.jpg"
-  },
-  {
-      name: "Michael Brown",
-      title: "Cybersecurity Expert",
-      description: "Michael Brown is a cybersecurity expert with a focus on ethical hacking and network security. He has spoken at numerous cybersecurity seminars and has contributed to several open-source security tools.",
-      image: "/speakers/speaker4.jpg"
-  },
-  {
-      name: "Sarah Lee",
-      title: "Data Scientist",
-      description: "Sarah Lee is a data scientist who specializes in big data analytics and machine learning. She has worked with top tech companies to derive insights from large datasets and is a frequent speaker at data science meetups.",
-      image: "/speakers/speaker5.jpg"
-  }
-];
+    {
+        name: "Dr. John Smith",
+        title: "AI Researcher",
+        description: "Dr. John Smith, an AI expert with 15+ years in deep learning, is a frequent keynote at global AI conferences.",
+        image: "/speakers/speaker1.jpg"
+    },
+    {
+        name: "John Doe",
+        title: "Cloud Solutions Architect",
+        description: "John Doe, a Cloud Architect with 10 years' experience, has led successful cloud migration projects.",
+        image: "/speakers/speaker2.jpg"
+    },
+    {
+        name: "Dr. Emily Zhang",
+        title: "Backend Developer",
+        description: "Dr. Emily Zhang, a backend developer, is known for her robust systems and passion for teaching.",
+        image: "/speakers/speaker3.jpg"
+    },
+    {
+        name: "Michele Brown",
+        title: "Cybersecurity Expert",
+        description: "Michele Brown specializes in ethical hacking and network security, speaking at top cybersecurity events.",
+        image: "/speakers/speaker4.jpg"
+    },
+    {
+        name: "Marco Rodriguez",
+        title: "Data Scientist",
+        description: "Marco Rodriguez, a data scientist, excels in big data analytics and machine learning.",
+        image: "/speakers/speaker5.jpg"
+    }
+  ];
+  
 
 const SpeakersArea = () => {
     return (
