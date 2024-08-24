@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import client from "../../../../apolloClient";
 import { gql } from "@apollo/client";
 import Image from "next/image"; // Import Image component from next/image
+import Link from "next/link";
 
 // Define types for the data
 interface ImageData {
@@ -77,7 +78,7 @@ const SingleStory = ({ params }: { params: { slug: string } }) => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row md:justify-evenly">
         <div className="bg-white rounded-lg m-6 w-[600px] flex flex-col items-center justify-center">
           {story.image.length > 0 && (
             <Image
@@ -90,6 +91,12 @@ const SingleStory = ({ params }: { params: { slug: string } }) => {
           )}
           <p className="font-bold">{story.title}</p>
           <p>{story.textLong}</p>
+          <Link
+                              href={`/stories`}
+                              className="hover:text-grey1 underline font-bold"
+                                  >
+                                Back to stories
+                      </Link>
         </div>
       </div>
     </>

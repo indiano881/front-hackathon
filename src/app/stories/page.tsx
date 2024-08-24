@@ -42,7 +42,7 @@ const Stories = () => {
   <>
   <BigTitle text1={"Our"} text2={"Stories"} />
   
-  <div className="flex flex-col md:flex-row">
+  <div className="flex flex-col md:flex-row md:justify-evenly">
       
       {dataCleaned.map((item: any, index: number) => (
         <div key={index} className="bg-white rounded-lg m-6 w-[300px] flex flex-col items-center">
