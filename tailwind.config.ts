@@ -23,6 +23,16 @@ const config: Config = {
       fontFamily: {
         roboto: ["var(--font-roboto)"],
       },
+      keyframes: {
+        splash: {
+          '0%': { transform: 'scale(0)', opacity: 0 },
+          '50%': { transform: 'scale(1.1)', opacity: 1 },
+          '100%': { transform: 'scale(1)', opacity: 0 },
+        },
+      },
+      animation: {
+        splash: 'splash 2s ease-in-out forwards',
+      }
     },
   },
   plugins: [],
