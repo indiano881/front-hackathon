@@ -129,7 +129,7 @@ export default function NavbarC() {
   </motion.div>
  
   
-  )};
+  )}
   </>
   )
 }
