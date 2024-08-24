@@ -78,8 +78,8 @@ const SingleStory = ({ params }: { params: { slug: string } }) => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row md:justify-evenly">
-        <div className="bg-white rounded-lg m-6 w-[600px] flex flex-col items-center justify-center">
+      <div className="flex flex-col md:flex-row md:justify-evenly items-center">
+        <div className="bg-white rounded-lg m-6 w-[300px] md:w-[600px] flex flex-col items-center justify-center">
           {story.image.length > 0 && (
             <Image
               src={`${story.image[0].url}`}
@@ -91,12 +91,7 @@ const SingleStory = ({ params }: { params: { slug: string } }) => {
           )}
           <p className="font-bold">{story.title}</p>
           <p>{story.textLong}</p>
-          <Link
-                              href={`/stories`}
-                              className="hover:text-grey1 underline font-bold"
-                                  >
-                                Back to stories
-                      </Link>
+          <Link href={`/stories`} className="hover:text-grey1 underline font-bold">Back to stories</Link>
         </div>
       </div>
     </>
