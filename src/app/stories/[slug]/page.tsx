@@ -5,6 +5,8 @@ import client from "../../../../apolloClient";
 import { gql } from "@apollo/client";
 import Image from "next/image"; // Import Image component from next/image
 import Link from "next/link";
+import { Navbar } from "@nextui-org/react";
+import NavbarC from "@/components/Navbar/page";
 
 // Define types for the data
 interface ImageData {
@@ -78,6 +80,7 @@ const SingleStory = ({ params }: { params: { slug: string } }) => {
 
   return (
     <>
+    <NavbarC />
       <div className="flex flex-col md:flex-row md:justify-evenly items-center">
         <div className="bg-white rounded-lg m-6 w-[300px] md:w-[600px] flex flex-col items-center justify-center">
           {story.image.length > 0 && (
