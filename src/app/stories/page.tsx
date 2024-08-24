@@ -7,6 +7,7 @@ import BigTitle from "@/components/BigTitle/page";
 import Background from "@/components/Background/page";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import NavbarC from "@/components/Navbar/page";
 
 async function getData() {
   const { data } = await client.query({
@@ -40,6 +41,7 @@ const Stories = () => {
   const baseURL= "https://eu-central-1-shared-euc1-02.graphassets.com/clyh94fzz040h06w509j46b34/"
   return (
   <>
+  <NavbarC />
   <BigTitle text1={"Our"} text2={"Stories"} />
   <div className="flex flex-col w-[300px] md:w-[450px] m-6">
     <h1 className="text-white h2">Lates news</h1>

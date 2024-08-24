@@ -1,10 +1,11 @@
     import BigTitle from "@/components/BigTitle/page";
 import ContactForm from "../../components/ContactForm/page"
+import NavbarC from "@/components/Navbar/page";
     
     const registration = () => {
         return (
             <div>
-                
+                <NavbarC />
               <BigTitle text1={"Registration"} text2={"Page"} />
                 <div className="flex flex-col w-[300px] md:w-[450px] m-6">
                     <h1 className="text-white h2">Register for Our Events</h1>
