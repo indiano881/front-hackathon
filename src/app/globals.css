@@ -92,9 +92,10 @@ html {
   
   @keyframes init {
     0% {
-      width: 0px;
-      height: 0px;
+      width: 100px;
+      height: 100px;
     }
+    
     100% {
       width: 100px;
       height: 100px;

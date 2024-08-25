@@ -61,29 +61,29 @@ export default function NavbarC() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/" className="text-white hover:underline">
+          <Link color="foreground" href="/" className="text-black hover:underline">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/registration" aria-current="page" className="text-white hover:underline">
+          <Link href="/registration" aria-current="page" className="text-black hover:underline">
             Registration
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/about" aria-current="page" className="text-white hover:underline" >
+          <Link href="/about" aria-current="page" className="text-black hover:underline" >
             About us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/stories" className="text-white hover:underline">
+          <Link color="foreground" href="/stories" className="text-black hover:underline">
             Stories
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">{/*<NavbarItem><Link href="/registration">Login</Link></NavbarItem>*/}
         <NavbarItem>
-          <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-white hover:text-d-purple shadow-lg cursor-pointer bg-c-pink text-black mx-8 py-2 hidden md:inline-block">
+          <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-d-purple hover:text-white shadow-lg cursor-pointer bg-c-pink text-black mx-8 py-2 hidden md:inline-block">
             Enroll here
           </Button>
         </NavbarItem>
