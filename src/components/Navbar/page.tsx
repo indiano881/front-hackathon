@@ -59,31 +59,31 @@ export default function NavbarC() {
        
         
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden md:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/" className="text-black hover:underline">
+          <Link color="foreground" href="/" className="text-black hover:underline font-semibold">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/registration" aria-current="page" className="text-black hover:underline">
+          <Link href="/registration" aria-current="page" className="text-black hover:underline font-semibold">
             Registration
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/about" aria-current="page" className="text-black hover:underline" >
+          <Link href="/about" aria-current="page" className="text-black hover:underline font-semibold" >
             About us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/stories" className="text-black hover:underline">
+          <Link color="foreground" href="/stories" className="text-black hover:underline font-semibold">
             Stories
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">{/*<NavbarItem><Link href="/registration">Login</Link></NavbarItem>*/}
         <NavbarItem>
-          <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-d-purple hover:text-white shadow-lg cursor-pointer bg-c-pink text-black mx-8 py-2 hidden md:inline-block">
+          <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className="font-semibold hover:bg-d-purple hover:text-white shadow-lg cursor-pointer bg-c-pink text-black mx-8 py-2 hidden md:inline-block text-center w-[200px]">
             Enroll here
           </Button>
         </NavbarItem>
