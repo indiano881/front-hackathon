@@ -44,7 +44,9 @@ const Hero = () => {
         
             </div>
         <div className="flex flex-col m-6">
-            <h1 className="text-white h2 uppercase font-bold  text-[45px] sm:text-[55px] md:text-[70px] lg:text-[95px] xl:text-[100px] 2xl:text-[110px] pb-14 leading-normal">Prepare for greatness<span className="esclamation">!</span></h1>
+            <h1 className="text-white h2 uppercase font-bold  text-[45px] sm:text-[55px] md:text-[70px] lg:text-[95px] xl:text-[100px] 2xl:text-[110px] pb-14 leading-normal">
+                <span className="esclamation">Pr</span>epare f<span className="esclamation">o</span>r <span className="esclamation">gre</span>atne<span className="esclamation">ss!</span>
+                </h1>
             
         </div>
         

@@ -27,7 +27,7 @@ const prizesData = [
         text: "SECOND",
         text1: "RUNNER UP",
         text2: "3,000 SEK",
-        textColor: "c-yellow",
+        textColor: "white",
         textColor1: "white"
     },
 

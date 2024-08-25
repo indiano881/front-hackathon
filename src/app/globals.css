@@ -173,12 +173,14 @@ html {
  
     @keyframes colorChange {
       0% { color: #fff; }
+      25% { color: #C7EA46; }
       50% { color: #C7EA46; }
-      100% { color: #DDA0DD; }
+      75% { color: #C7EA46; }
+      100% { color: #fff; }
     }
     
     .esclamation {
       display: inline-block;
-      animation: colorChange 3s infinite;
+      animation: colorChange 5s 4;
     }
   
