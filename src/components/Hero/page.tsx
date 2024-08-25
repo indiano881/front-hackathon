@@ -43,9 +43,9 @@ const Hero = () => {
           alt="Picture of the author"/>
         
             </div>
-        <div className="flex flex-col w-[300px] md:w-[450px] m-6">
-            <h1 className="text-white h2">What is Frontendathon?</h1>
-            <h2 className="text-c-pink h2 w-[300px] md:w-[600px]">Frontendathon is an Hackathon with the main focus help students to learn, compete, enlarge their porfolio as never done before</h2>
+        <div className="flex flex-col m-6">
+            <h1 className="text-white h2 uppercase font-bold  text-[45px] sm:text-[55px] md:text-[70px] lg:text-[95px] xl:text-[100px] 2xl:text-[110px] pb-14 leading-normal">Prepare for greatness<span className="esclamation">!</span></h1>
+            
         </div>
         
         <HeroFooter />
