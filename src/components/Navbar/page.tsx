@@ -46,7 +46,7 @@ export default function NavbarC() {
   return (
     <>
     
-    <Navbar  className="md:bg-c-green md:sticky top-0 md:shadow-lg md:py-0 z-30">
+    <Navbar  className="bg-c-green md:sticky top-0 md:shadow-lg md:py-0 z-30">
         {/*should hide on scroll only for mobile */}
       <NavbarBrand>
         <a href="/"> <Image className="rounded-full m-2"
@@ -108,7 +108,7 @@ export default function NavbarC() {
                 strokeLinejoin="round"
                 strokeWidth={2}
                 d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
-                style={{ stroke: 'white' }} // This explicitly sets the stroke color to white
+                style={{ stroke: '#32174D' }} // This explicitly sets the stroke color to white
             />
         </motion.svg>
     </button>
@@ -119,13 +119,15 @@ export default function NavbarC() {
     initial="closed"
     animate="open"
     variants={wrapperVariants}
-    className="bg-c-pink w-full md:hidden flex flex-col p-6 space-y-6 absolute top-[70px] z-10"
+    className="bg-c-green w-full md:hidden flex flex-col p-6 space-y-6 absolute top-[70px] z-10"
   >
     <Link href={"/"} className="button-text" >Home</Link>
     <Link href={"/registration"} className="block mb-2 button-text">Registartion</Link>
     <Link href={`/about`} className="block mb-2 button-text">About us</Link>
     <Link href={`/stories`} className="block mb-2 button-text">Stories</Link>
-    
+    <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-d-purple hover:text-white shadow-lg cursor-pointer bg-d-purple text-white mx-8 py-2 text-center">
+            Enroll here
+          </Button>
   </motion.div>
  
   
