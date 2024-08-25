@@ -21,11 +21,11 @@ export default function Home() {
     if (hasShownSplash) {
       setLoading(false); // Skip splash screen
     } else {
-      // Show splash screen and set the sessionStorage flag
+      // Show splash screen and set the sessionStorage 
       const timer = setTimeout(() => {
         setLoading(false);
         sessionStorage.setItem("hasShownSplash", "true");
-      }, 2800); // Duration of the splash animation
+      }, 3000); // Duration of the splash animation
 
       return () => clearTimeout(timer); // Clean up the timer
     }
