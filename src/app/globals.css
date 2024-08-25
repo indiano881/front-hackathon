@@ -139,7 +139,7 @@ html {
   
   @keyframes moveUp {
     0% {
-      background: #DDA0DD;
+      background: #C7EA46;
       top: 90%;
     }
     50% {
@@ -147,41 +147,26 @@ html {
     }
     100% {
       top: 50%;
-      background: #DDA0DD;
+      background: #C7EA46;
     }
   }
   
   @keyframes materia {
     0% {
-      background: #DDA0DD;
+      background: #C7EA46;
     }
     50% {
-      background: #DDA0DD;
-      top: 10px;
+      background: #C7EA46;
+      top: 36px;
     }
     100% {
-      background: #DDA0DD;
+      background: #C7EA46;
       width: 100%;
       height: 76px;
-      border-radius: 50px;
-      top: 10px;
+      border-radius: 0px;
+      top: 36px;
     }
   }
   
-  @keyframes moveIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
   
-  @keyframes hide {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  } 
+  

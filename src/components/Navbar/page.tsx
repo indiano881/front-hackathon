@@ -46,7 +46,7 @@ export default function NavbarC() {
   return (
     <>
     
-    <Navbar  className="md:bg-d-purple md:sticky top-0 md:shadow-lg md:py-4 z-30">
+    <Navbar  className="md:bg-c-green md:sticky top-0 md:shadow-lg md:py-0 z-30">
         {/*should hide on scroll only for mobile */}
       <NavbarBrand>
         <a href="/"> <Image className="rounded-full m-2"

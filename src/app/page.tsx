@@ -25,7 +25,7 @@ export default function Home() {
       const timer = setTimeout(() => {
         setLoading(false);
         sessionStorage.setItem("hasShownSplash", "true");
-      }, 3000); // Duration of the splash animation
+      }, 2000); // Duration of the splash animation
 
       return () => clearTimeout(timer); // Clean up the timer
     }
