@@ -29,7 +29,7 @@ const Hero = () => {
                 <p className="text-c-pink m1 sm:h1">26, 27 & 28 FEB 2026</p>
                 <h2 className="text-c-green m1 sm:h1">Frontend</h2>
                 <h2 className="text-white m1 sm:h1">Hackathon</h2>
-                <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-c-pink hover:text-black shadow-lg cursor-pointer bg-c-green text-black text-[38px] sm:ml-[100px] my-8 p-2 text-center w-[300px]">
+                <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-c-pink hover:text-black shadow-lg cursor-pointer bg-c-green text-black text-[34px] font-semibold uppercase sm:ml-[100px] my-8 p-2 text-center w-[300px]">
             Register here
           </Button>
             </div>

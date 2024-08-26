@@ -73,7 +73,7 @@ const PrizeArea = () => {
         <p className='h2 text-c-pink'>Registration for free</p> 
         <p className='h2 text-white'>Appplication closes</p>
         <p className='m1 sm:h1 text-white'>February 20th</p> 
-        <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-c-pink hover:text-black shadow-lg cursor-pointer bg-c-green text-black text-[38px] lg:ml-[100px] my-8 p-2 text-center w-[300px]">
+        <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-c-pink hover:text-black shadow-lg cursor-pointer bg-c-green text-black text-[34px] font-semibold uppercase lg:ml-[100px] my-8 p-2 text-center w-[300px]">
             Register here
           </Button>
     </div>

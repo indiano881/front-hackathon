@@ -122,7 +122,7 @@ export default function NavbarC() {
     className="bg-c-green w-full md:hidden flex flex-col p-6 space-y-6 absolute top-[70px] z-10"
   >
     <Link href={"/"} className="button-text" >Home</Link>
-    <Link href={"/registration"} className="block mb-2 button-text">Registartion</Link>
+    <Link href={"/registration"} className="block mb-2 button-text">Registration</Link>
     <Link href={`/about`} className="block mb-2 button-text">About us</Link>
     <Link href={`/stories`} className="block mb-2 button-text">Stories</Link>
     <Button as={Link} radius="full" color="primary" href="/registration" variant="flat" className=" hover:bg-d-purple hover:text-white shadow-lg cursor-pointer bg-d-purple text-white mx-8 py-2 text-center">
